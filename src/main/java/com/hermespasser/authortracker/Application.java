@@ -1,13 +1,13 @@
-package com.hermespasser.personapi;
+package com.hermespasser.authortracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PersonapiApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PersonapiApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

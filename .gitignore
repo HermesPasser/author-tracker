@@ -1,4 +1,5 @@
 HELP.md
+authortracker.iml
 
 *.class
 
@@ -6,4 +7,5 @@ HELP.md
 *.war
 
 .mvn/
-.idea/
+.idea
+target/

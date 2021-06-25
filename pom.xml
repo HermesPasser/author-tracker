@@ -79,7 +79,6 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
-					<mainClass>com.hermespasser.authortracker.Application</mainClass>
 					<fork>true</fork>
 					<compilerArgs>
 						<arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>

@@ -33,7 +33,7 @@ sample json
 status values ara HIATUS, COMPLETE, and ONGOING  
 
 *create*: create an author.  
-*find/id*: get the author with the given id.
+*find/id*: get the author with the given id.  
 *delete/id*: removes the author with the given id.  
 *list*: get all authors.  
 *update/id*: updates the author with the given id.  

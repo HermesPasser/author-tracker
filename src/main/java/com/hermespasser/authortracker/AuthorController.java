@@ -29,7 +29,7 @@ public class AuthorController {
         return this.authorService.findById(id);
     }
 
-    @GetMapping("/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id) throws AuthorNotFound {
         this.authorService.deleteById(id);

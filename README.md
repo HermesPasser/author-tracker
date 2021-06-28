@@ -11,7 +11,7 @@ run the command `mvn spring-boot:run` and interact using the address http://loca
 
 ## api
 
-sample json
+sample json (you can see full examples in post-example.md file)  
 ```json
 {
   "id": 0,

@@ -31,6 +31,7 @@ sample json
 }
 ```
 status values ara HIATUS, COMPLETE, and ONGOING  
+do not include the _id_ if you are adding an author.  
 
 *post*: create an author.  
 *get /id*: get the author with the given id.  

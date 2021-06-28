@@ -1,9 +1,8 @@
 package com.hermespasser.authortracker;
 
 import com.hermespasser.authortracker.dto.AuthorDto;
-import com.hermespasser.authortracker.error.AuthorNotFound;
+import com.hermespasser.authortracker.error.AuthorNotFoundException;
 import com.hermespasser.authortracker.service.AuthorService;
-import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,13 +24,13 @@ public class AuthorController {
     }
 
     @GetMapping("/{id}")
-    public AuthorDto find(@PathVariable Long id) throws AuthorNotFound {
+    public AuthorDto find(@PathVariable Long id) throws AuthorNotFoundException {
         return this.authorService.findById(id);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable Long id) throws AuthorNotFound {
+    public void delete(@PathVariable Long id) throws AuthorNotFoundException {
         this.authorService.deleteById(id);
     }
 
@@ -41,7 +40,7 @@ public class AuthorController {
     }
 
     @PutMapping("/{id}")
-    public MessageResponse update(@PathVariable Long id, @RequestBody @Valid AuthorDto authorDto) throws AuthorNotFound {
+    public MessageResponse update(@PathVariable Long id, @RequestBody @Valid AuthorDto authorDto) throws AuthorNotFoundException {
         return this.authorService.updateById(id, authorDto);
     }
 }

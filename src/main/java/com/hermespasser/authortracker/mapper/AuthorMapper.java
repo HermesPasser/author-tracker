@@ -3,7 +3,7 @@ import com.hermespasser.authortracker.dto.AuthorDto;
 import com.hermespasser.authortracker.entity.Author;
 
 public interface AuthorMapper {
-    Author toModel(AuthorDto authorDTO);
+    Author toModel(AuthorDto authorDto);
 
-    AuthorDto toDTO(Author author);
+    AuthorDto toDto(Author author);
 }

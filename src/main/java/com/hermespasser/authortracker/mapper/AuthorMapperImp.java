@@ -3,18 +3,19 @@ import com.hermespasser.authortracker.dto.AuthorDto;
 import com.hermespasser.authortracker.entity.Author;
 
 public class AuthorMapperImp implements AuthorMapper {
+    public AuthorMapperImp() {}
 
-    public Author toModel(AuthorDto authorDTO) {
+    public Author toModel(AuthorDto authorDto) {
         var author = new Author();
-        author.setId(authorDTO.getId());
-        author.setPenName(authorDTO.getPenName());
-        author.setAltName(authorDTO.getAltName());
-        author.setProfileImgUrl(authorDTO.getProfileImgUrl());
-        author.setComics(authorDTO.getComics());
+        author.setId(authorDto.getId());
+        author.setPenName(authorDto.getPenName());
+        author.setAltName(authorDto.getAltName());
+        author.setProfileImgUrl(authorDto.getProfileImgUrl());
+        author.setComics(authorDto.getComics());
         return author;
     }
 
-    public AuthorDto toDTO(Author author) {
+    public AuthorDto toDto(Author author) {
         var dto = new AuthorDto();
         dto.setId(author.getId());
         dto.setPenName(author.getPenName());

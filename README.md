@@ -2,9 +2,10 @@
 comic artist api sample project made in spring boot for a bootcamp
 
 ## requeriments
-maven dependencies can be found in pom.xml file 
 - jdk 11
 - maven
+
+other dependencies can be found in pom.xml file 
 
 ## running
 run the command `mvn spring-boot:run` and interact using the address http://localhost:8080/api/v1/author

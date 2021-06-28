@@ -12,7 +12,7 @@
 	<artifactId>authortracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>authortracker</name>
-	<description>Rest project example</description>
+	<description>Rest API that tracks comic artists, made as example project to test sprinbtoot</description>
 
 	<properties>
 		<java.version>11</java.version>

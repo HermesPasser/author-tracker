@@ -35,6 +35,6 @@ public class Author {
     @Column(nullable = true)
     private String profileImgUrl;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     private List<Comic> comics;
 }
